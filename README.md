@@ -20,6 +20,7 @@ Install java and postgresql if not already installed on this server.
 Create a metabase folder
   - sudo mkdir metabase
 Create folder structure in metabase folder
+  - sudo mkdir metabase install
   - sudo mkdir metabase utils
 
 Clone Aberp-bi-metabse github repository
