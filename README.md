@@ -6,12 +6,17 @@ Summary
 The purpose of this repository is to help you install Metabase Business Intelligence and configure iDempiere to make reporting much easier and more intuitive.
 
 Instructions
+  Update Ubuntu - Sudo apt-get update
   Install java and postgresql if not already installed on this server.
   sudo apt-get --yes install openjdk-11-jdk
-sudo apt-get --yes install postgresql postgresql-contrib phppgadmin libaprutil1-dbd-pgsql
+  sudo apt-get --yes install postgresql postgresql-contrib phppgadmin libaprutil1-dbd-pgsql
+
 Execute the ...install/metabase-install.sh script to install metabase.
+
 Execute the ...sql/update-sql.sh to create the special bi user and views in iDempiere.
+
 Execute the ...sql/refresh-mat-view-sql.sh to update the materialized view.
+
 You can run it via cron or via the iDempiere scheduler.
 If you use iDempiere scheduler, make sure the script is owned by idempiere user.
 
