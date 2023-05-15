@@ -26,6 +26,9 @@ Create folder structure in metabase folder
 Clone Aberp-bi-metabse github repository
   - sudo git clone https://github.com/AdamSawtell/aberp-bi-metabase.git
 
+Make the scripts excutable
+  - sudo chmod +x (add script name)
+
 Execute the ...install/metabase-install.sh script to install metabase.
 
 Execute the ...sql/update-sql.sh to create the special bi user and views in iDempiere.
