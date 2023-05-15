@@ -18,7 +18,9 @@ Install java and postgresql if not already installed on this server.
   - sudo apt-get --yes install postgresql postgresql-contrib phppgadmin libaprutil1-dbd-pgsql
 
 Create a metabase folder
-- sudo mkdir metabase
+  - sudo mkdir metabase
+Create folder structure in metabase folder
+  - sudo mkdir metabase utils
 
 Clone Aberp-bi-metabse github repository
   - sudo git clone 
