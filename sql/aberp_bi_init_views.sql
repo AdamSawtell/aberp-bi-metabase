@@ -21,7 +21,7 @@ END
 $do$;
 
 GRANT USAGE ON SCHEMA adempiere TO biaccess;
-ALTER USER biaccess WITH PASSWORD 'Silly'; --CHANGEME!!!
+ALTER USER biaccess WITH PASSWORD 'flamingo'; --CHANGEME!!!
 ALTER USER biaccess  WITH LOGIN;
 --NOTE: access to specific credentials listed below.
 --NOTE: metabase is very aggressive. If you do not restrict access to only views, it will lock down tables. 
