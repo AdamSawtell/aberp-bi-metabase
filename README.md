@@ -17,19 +17,17 @@ Install java and postgresql if not already installed on this server.
   - sudo apt-get --yes install openjdk-11-jdk
   - sudo apt-get --yes install postgresql postgresql-contrib phppgadmin libaprutil1-dbd-pgsql
 
-Create a metabase folder
-  - sudo mkdir metabase
-Create folder structure in metabase folder
-  - sudo mkdir metabase install
-  - sudo mkdir metabase utils
+Create a metabase install folder on home dir
+  - sudo mkdir metabaseinstall
 
 Clone Aberp-bi-metabse github repository
   - sudo git clone https://github.com/AdamSawtell/aberp-bi-metabase.git
 
-Make the scripts excutable
-  - sudo chmod +x (add script name)
+Make the scripts excutable - All. Need to do by folder
+  - sudo chmod +x *
 
 Execute the ...install/metabase-install.sh script to install metabase.
+  - sudo ./metabase-install.shcd me
 
 Execute the ...sql/update-sql.sh to create the special bi user and views in iDempiere.
 
