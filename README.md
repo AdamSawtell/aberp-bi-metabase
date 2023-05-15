@@ -24,7 +24,7 @@ Create folder structure in metabase folder
   - sudo mkdir metabase utils
 
 Clone Aberp-bi-metabse github repository
-  - sudo git clone 
+  - sudo git clone https://github.com/AdamSawtell/aberp-bi-metabase.git
 
 Execute the ...install/metabase-install.sh script to install metabase.
 
