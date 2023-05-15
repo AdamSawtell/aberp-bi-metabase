@@ -1,4 +1,4 @@
-
+#!/bin/bash
 
 -- The purpose of this script is to help you create views that are easily used inside a BI or analytics tool.
 --{{{
