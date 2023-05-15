@@ -5,12 +5,20 @@ Metabase Installer
 Summary
 The purpose of this repository is to help you install Metabase Business Intelligence and configure AbilityERP (iDempiere) to make reporting much easier and more intuitive.
 
+Launch Ubuntu Instance
+  - Ec2: t2 Med, 30 gig (Min)
+
 Instructions
-  - Update Ubuntu - Sudo apt-get update
+
+Update Ubuntu 
+  - sudo apt-get update
 
 Install java and postgresql if not already installed on this server.
   - sudo apt-get --yes install openjdk-11-jdk
   - sudo apt-get --yes install postgresql postgresql-contrib phppgadmin libaprutil1-dbd-pgsql
+
+Cteate a metabse folder
+- sudo mkdir metabase
 
 Clone Aberp-bi-metabse github repository
   - sudo git clone 
