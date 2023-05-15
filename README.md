@@ -12,8 +12,10 @@ Install java and postgresql if not already installed on this server.
   - sudo apt-get --yes install openjdk-11-jdk
   - sudo apt-get --yes install postgresql postgresql-contrib phppgadmin libaprutil1-dbd-pgsql
 
+Clone Aberp-bi-metabse github repository
+  - sudo git clone 
+
 Execute the ...install/metabase-install.sh script to install metabase.
-  - sudo wget 
 
 Execute the ...sql/update-sql.sh to create the special bi user and views in iDempiere.
 
