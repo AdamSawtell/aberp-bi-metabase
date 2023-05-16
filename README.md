@@ -20,7 +20,7 @@ Install java and postgresql if not already installed on this server.
 Create a metabase install folder on home dir
   - sudo mkdir metabaseinstall
 
-Clone Aberp-bi-metabse github repository
+Clone Aberp-bi-metabase github repository
   - sudo git clone https://github.com/AdamSawtell/aberp-bi-metabase.git
 
 Make the scripts excutable - All. Need to do by folder
@@ -33,8 +33,15 @@ Metabase will ne be available via HTTP on you Ip
 
 # Create the connection between Metabase and AbilityERP (iDempiere)
 
+Clone the Aberp-bi-metabase/sql scripts from github
+  - sudo git clone https://github.com/AdamSawtell/aberp-bi-metabase.git sql
+
+Make the scripts excutable - All. Need to do by folder
+  - sudo chmod +x *
+
 Execute the ...sql/update-sql.sh to create the special bi user and views in AbilityERP (iDempiere)
   - Run the script in AbiityERP Db via script
+  - sudo ./update-sql.sh
 
 Execute the ...sql/refresh-mat-view-sql.sh to update the materialized view.
 
