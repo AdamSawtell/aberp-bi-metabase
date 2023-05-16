@@ -21,6 +21,7 @@ Create a metabase install folder on home dir
   - sudo mkdir metabaseinstall
 
 Clone Aberp-bi-metabase github repository
+  - Go to folder metabaseinstall
   - sudo git clone https://github.com/AdamSawtell/aberp-bi-metabase.git
 
 Make the scripts excutable - All. Need to do by folder
