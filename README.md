@@ -31,6 +31,7 @@ Execute the ...install/metabase-install.sh script to install metabase.
   - sudo ./metabase-install.sh
 
 Metabase will be available via HTTP on you Ip
+Make sure you have managed security groups on your server!
 
 # Create the connection between Metabase and AbilityERP (iDempiere)
 
