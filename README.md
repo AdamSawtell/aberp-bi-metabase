@@ -29,12 +29,12 @@ Make the scripts excutable - All. Need to do by folder
 Execute the ...install/metabase-install.sh script to install metabase.
   - sudo ./metabase-install.sh
 
-# Metabase will ne be available via HTTP on you Ip
+Metabase will ne be available via HTTP on you Ip
 
-Create the connection between Metabase and AbilityERP (iDempiere)
-  
+# Create the connection between Metabase and AbilityERP (iDempiere)
 
-Execute the ...sql/update-sql.sh to create the special bi user and views in iDempiere.
+Execute the ...sql/update-sql.sh to create the special bi user and views in AbilityERP (iDempiere)
+  - Run the script in AbiityERP Db via script
 
 Execute the ...sql/refresh-mat-view-sql.sh to update the materialized view.
 
