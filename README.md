@@ -44,16 +44,16 @@ Clone the Aberp-bi-metabase/sql scripts from github
 Make the scripts in sql folder excutable
   - sudo chmod +x *
 
-Update the refresh-mat-view-sql.sh with instance IP
-- sudo nano refresh-mat-view-sql.sh
-
 Execute the ...sql/update-sql.sh to create the special bi user and views in AbilityERP (iDempiere)
   - Run the update-sql.sh
-  - sudo ./update-sql.sh
+  - ./update-sql.sh
 
 Execute the ...sql/refresh-mat-view-sql.sh to update the materialized view.
 
-You can run it via cron or via the iDempiere scheduler.
+# You can run it via cron or via the iDempiere scheduler (Example below is daily)
+  - crontab -e
+  - 0 0 * * * /opt/metabase/sql/sql/refresh-mat-view-sql.sh
+
 If you use iDempiere scheduler, make sure the script is owned by idempiere user.
 
 Special Considerations
