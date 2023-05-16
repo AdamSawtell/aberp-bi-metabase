@@ -29,7 +29,7 @@ Make the scripts excutable - All. Need to do by folder
 Execute the ...install/metabase-install.sh script to install metabase.
   - sudo ./metabase-install.sh
 
-Metabase will ne be available via HTTP on you Ip
+Metabase will be available via HTTP on you Ip
 
 # Create the connection between Metabase and AbilityERP (iDempiere)
 
