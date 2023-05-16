@@ -54,7 +54,7 @@ Execute the ...sql/refresh-mat-view-sql.sh to update the materialized view.
   - crontab -e
   - 0 0 * * * /opt/metabase/sql/sql/refresh-mat-view-sql.sh
 
-If you use iDempiere scheduler, make sure the script is owned by idempiere user.
+# If you use iDempiere scheduler, make sure the script is owned by idempiere user.
 
 Special Considerations
 The metabase installation script assumes metabase's configuration database is installed locally 'localhost'.
