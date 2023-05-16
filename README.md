@@ -8,7 +8,7 @@ The purpose of this repository is to help you install Metabase Business Intellig
 Launch Ubuntu Instance
   - Ec2: t2 Med, 30 gig (Min)
 
-Instructions
+# Instructions
 
 Update Ubuntu 
   - sudo apt-get update
@@ -33,14 +33,22 @@ Metabase will ne be available via HTTP on you Ip
 
 # Create the connection between Metabase and AbilityERP (iDempiere)
 
+Log into AbilityERP (iDempiere) Bash
+- Create a new folder im /OPT/ folder called metabase
+- sudo mkdir metabase
+- Go to folder
+
 Clone the Aberp-bi-metabase/sql scripts from github
   - sudo git clone https://github.com/AdamSawtell/aberp-bi-metabase.git sql
 
-Make the scripts excutable - All. Need to do by folder
+Make the scripts in sql folder excutable
   - sudo chmod +x *
 
+Update the refresh-mat-view-sql.sh with instance IP
+- sudo nano refresh-mat-view-sql.sh
+
 Execute the ...sql/update-sql.sh to create the special bi user and views in AbilityERP (iDempiere)
-  - Run the script in AbiityERP Db via script
+  - Run the update-sql.sh
   - sudo ./update-sql.sh
 
 Execute the ...sql/refresh-mat-view-sql.sh to update the materialized view.
