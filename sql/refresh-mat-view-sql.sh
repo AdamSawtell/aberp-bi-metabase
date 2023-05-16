@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #ACTION: update ID_HOST to point to iDempiere database
-ID_HOST=CHANGEME_TO_PRODUCTION_DB_IP
+ID_HOST=localhost
 REFRESH_FILE=/tmp/metabase_idempiere_bi_sql_refresh_sql.txt
 REFRESH_RESULTS=/tmp/metabase_idempiere_bi_sql_refresh_results.txt
 
