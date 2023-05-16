@@ -5,7 +5,7 @@ ACCESS_FILE=/tmp/metabase_idempiere_bi_sql_access_out.txt
 
 echo
 echo Installing views...
-psql -h $ID_HOST -U adempiere -d idempiere -f chuboe_bi_init_views.sql &> $VIEW_FILE
+psql -h $ID_HOST -U adempiere -d idempiere -f aberp_bi_init_views.sql &> $VIEW_FILE
 
 echo
 echo Checking for errors...
