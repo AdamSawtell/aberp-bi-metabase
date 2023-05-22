@@ -3,12 +3,12 @@
 -- sudo -u postgres psql -d metabase -f utils.sql
 
 update metabase_table 
-set visibility_type = 'cruft'
+set visibility_type = 'hidden'
 where db_id in (select id from metabase_database where is_sample = 'no')
 ;
 
 update metabase_table 
-set visibility_type = ''
+set visibility_type = null
 where name like 'bi%cache%'
 and db_id in (select id from metabase_database where is_sample = 'no')
 ;
